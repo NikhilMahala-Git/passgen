@@ -40,12 +40,12 @@ func main() {
 	_argCount := len(_args)
 
 	if _argCount < 3 {
-		fmt.Printf( "Usage: passgen <suffix> <password>\n");
+		fmt.Printf( "Usage: passgen <prefix> <password>\n");
 		return
 	}
 
-	_suffix := _args[1]
+	_prefix := _args[1]
 	_passwd := _args[2]
 
-	fmt.Printf("Generated: %v%v\n", _suffix, passgen(_passwd))
+	fmt.Printf("Generated: %v%v\n", _prefix, passgen(_passwd))
 }
